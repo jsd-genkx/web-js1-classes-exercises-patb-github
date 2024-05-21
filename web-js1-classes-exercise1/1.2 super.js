@@ -53,6 +53,16 @@ class Hawk extends Animal {
   }
 }
 
+class Gopher extends Animal {
+  constructor(name, age, digSpeed) {
+    super(name, age);
+    this.digSpeed = digSpeed;
+  }
+  dig() {
+    console.log(`${this.name} the gopher can dig!`);
+    super.move(this.digSpeed);
+  }
+}
 // ReferenceError: Must call super constructor in derived class before accessing 'this'
 const rabbit1 = new Rabbit("rabbit1", 1, 25);
 const fish1 = new Fish("fish1", 2, 12);
@@ -64,3 +74,7 @@ console.log(`Animal speed is ${rabbit1.runSpeed}`);
 
 // with the super keyword we can extend methods from the parent class
 fish1.swim();
+
+const gopher = new Gopher("John", 2, 2.5);
+for (let key in gopher) console.log(`Gopher ${key} is ${gopher[key]}.`);
+gopher.dig();

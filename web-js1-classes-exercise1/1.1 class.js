@@ -55,3 +55,7 @@ product1.displayProduct();
 const totalPrice = product1.calculateTotal(salesTax);
 
 console.log(`Total Price (with tax): ฿${totalPrice.toFixed(2)}`);
+
+const shoes = new Product("Shoes", 150.00);
+shoes.displayProduct();
+console.log(`Total Price (with tax): ฿${shoes.calculateTotal(salesTax).toFixed(2)}`);
