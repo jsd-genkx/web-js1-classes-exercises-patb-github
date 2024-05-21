@@ -13,4 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document
     .getElementById("nextButton")
     .addEventListener("click", () => imageSlider.nextImage());
+  document
+    .getElementById("randomButton")
+    .addEventListener("click", () => imageSlider.randomImage());
 });

@@ -14,14 +14,22 @@
       >
         Previous
       </button>
-      <div id="imageContainer" class="w-96 h-64 overflow-hidden mx-4">
-        <img
-          id="sliderImage"
-          class="w-full h-full object-cover"
-          src="images/image1.svg"
-          alt="Image Slider"
-        />
-      </div>
+      <div class="flex flex-col">
+        <div id="imageContainer" class="w-96 h-64 overflow-hidden mx-4">
+          <img
+            id="sliderImage"
+            class="w-full h-full object-cover"
+            src="images/image1.svg"
+            alt="Image Slider"
+          />
+        </div>
+        <button
+          id="randomButton"
+          class="px-4 py-2 bg-gray-300 hover:bg-gray-400 rounded"
+          >
+          Randomize!
+        </button>
+      </div>  
       <button
         id="nextButton"
         class="px-4 py-2 bg-gray-300 hover:bg-gray-400 rounded"

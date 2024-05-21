@@ -20,4 +20,11 @@ export class ImageSlider {
     this.currentIndex = (this.currentIndex + 1) % this.images.length;
     this.updateImage();
   }
+
+  // goes to random image that is not the current one
+  randomImage() {
+    const numberOfImages = this.images.length;
+    this.currentIndex = (this.currentIndex + 1 + Math.floor(Math.random() * (numberOfImages - 1))) % numberOfImages;
+    this.updateImage();
+  }
 }
